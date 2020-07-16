@@ -1,7 +1,6 @@
 const theme = {
   fonts: {
-    oswald: 'Oswald',
-    lobster: 'Lobster',
+    blinker: 'Blinker',
   },
   fontSizes: [
     '0.422em',
@@ -21,6 +20,17 @@ const theme = {
     purple: '#814d97',
     white: '#eeeeee',
   },
+  spaces: [
+    '0.422em',
+    '0.563em',
+    '0.75em',
+    '1em',
+    '1.333em',
+    '1.777em',
+    '2.369em',
+    '3.157em',
+    '4.209em',
+  ],
 };
 
 export default theme;

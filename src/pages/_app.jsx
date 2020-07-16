@@ -3,16 +3,13 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './globalStyles';
 import theme from '../theme';
-import 'typeface-lobster';
-import 'typeface-oswald';
+import 'typeface-blinker';
 
 const MyApp = ({ Component, pageProps }) => (
-  <>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  </>
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <Component {...pageProps} />
+  </ThemeProvider>
 );
 
 export default MyApp;
