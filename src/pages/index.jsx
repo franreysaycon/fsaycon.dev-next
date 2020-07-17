@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import Homepage from '../components/Homepage';
 
-const HomePage = () => (
-  <Hero />
+const IndexPage = () => (
+  <Homepage />
 );
 
-export default HomePage;
+export default IndexPage;
