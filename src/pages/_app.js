@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Head } from 'next/document';
+import Head from 'next/head';
 import GlobalStyle from './globalStyles';
 import theme from '../theme';
 import PreviewImage from '../public/preview-image.png';
@@ -9,6 +9,7 @@ import 'typeface-blinker';
 
 const MyApp = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
+    <GlobalStyle />
     <Head>
       <title>FSAYCON.DEV - Personal Website of Franrey Saycon</title>
       <meta
@@ -29,7 +30,6 @@ const MyApp = ({ Component, pageProps }) => (
       <meta property="og:url" content="https://fsaycon.dev/" />
       <meta property="og:site_name" content="FSAYCON.DEV - Personal Website of Franrey Saycon" />
     </Head>
-    <GlobalStyle />
     <Component {...pageProps} />
   </ThemeProvider>
 );
