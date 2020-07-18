@@ -8,6 +8,7 @@ const StyledDiv = styled.div`
   font-size: ${({ theme }) => theme.fontSizes[2]};
   margin: 0;
   margin-bottom: ${({ theme, marginBottom }) => (marginBottom ? theme.spaces[marginBottom - 1] : 0)};
+  line-height: 0.97;
 `;
 
 const Content = ({ children, marginBottom }) => (

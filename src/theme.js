@@ -16,6 +16,7 @@ const theme = {
     green: '#33888f',
     purple: '#814d97',
     white: '#eeeeee',
+    orange: '#faa945',
   },
   spaces: [
     '0.563rem',
@@ -24,6 +25,12 @@ const theme = {
     '1.333rem',
     '1.777rem',
     '2.369rem',
+  ],
+  breakpoints: [
+    '576px',
+    '768px',
+    '992px',
+    '1200px',
   ],
 };
 
