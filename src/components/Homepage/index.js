@@ -55,7 +55,7 @@ const Homepage = () => (
             .
           </Content>
           <Content marginBottom={2}>
-            I am a software engineer specializing in architecting solutions and 
+            I am a software engineer specializing in architecting solutions and
             building web/mobile applications.
           </Content>
           <Content marginBottom={2}>
