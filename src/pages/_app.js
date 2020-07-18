@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import GlobalStyle from './globalStyles';
 import theme from '../theme';
-import PreviewImage from '../public/preview-image.png';
+import Favicon from '../public/favicon.ico';
 import 'typeface-blinker';
 
 const MyApp = ({ Component, pageProps }) => (
@@ -26,9 +26,11 @@ const MyApp = ({ Component, pageProps }) => (
         content="Hi there, I'm Franrey Saycon. I'm a software engineer specializing in architecting solutions
       and building website/mobile apps."
       />
-      <meta property="og:image" content={PreviewImage} />
+      <meta property="og:image" content="https://i.ibb.co/Y7bYd27/preview-image.png" />
       <meta property="og:url" content="https://fsaycon.dev/" />
       <meta property="og:site_name" content="FSAYCON.DEV - Personal Website of Franrey Saycon" />
+      <link rel="shortcut icon" href={Favicon} type="image/x-icon" />
+      <link rel="icon" href={Favicon} type="image/x-icon" />
     </Head>
     <Component {...pageProps} />
   </ThemeProvider>
