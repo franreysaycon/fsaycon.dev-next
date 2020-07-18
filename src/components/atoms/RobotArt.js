@@ -38,7 +38,7 @@ const RobotArt = () => {
     };
   }, [imageLoaded]);
 
-  return <StyledImage src={imageLoaded} style={spring} />;
+  return <StyledImage src={imageLoaded} style={spring} alt="A hovering robot with two hands and black matte paint." />;
 };
 
 export default RobotArt;

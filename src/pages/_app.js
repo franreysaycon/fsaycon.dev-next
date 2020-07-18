@@ -28,6 +28,7 @@ const MyApp = ({ Component, pageProps }) => (
       and building website/mobile apps."
       />
       <meta property="og:image" content="https://i.ibb.co/Y7bYd27/preview-image.png" />
+      <meta property="og:image:alt" content="Fantasy drawing of Franrey Saycon in a sci-fi mechanic suit solving a cosmic rubix cube." />
       <meta property="og:url" content="https://fsaycon.dev/" />
       <meta property="og:site_name" content="FSAYCON.DEV - Personal Website of Franrey Saycon" />
       <link rel="shortcut icon" href={Favicon} type="image/x-icon" />

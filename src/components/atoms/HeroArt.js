@@ -32,7 +32,7 @@ const HeroArt = () => {
     };
   }, [imageLoaded]);
 
-  return <StyledImage src={imageLoaded} style={spring} />;
+  return <StyledImage src={imageLoaded} style={spring} alt="Fantasy drawing of Franrey Saycon in a sci-fi mechanic suit solving a cosmic rubix cube." />;
 };
 
 export default HeroArt;
