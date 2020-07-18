@@ -5,7 +5,7 @@ import Box from '../atoms/Box';
 import Content from '../atoms/Content';
 import Header from '../atoms/Header';
 import HeroArt from '../atoms/HeroArt';
-import Robot from '../../public/robot.png';
+import RobotArt from '../atoms/RobotArt';
 
 const LeftSection = styled.div`
   display: none;
@@ -39,20 +39,9 @@ const SectionContent = styled.div`
   }
 `;
 
-const PeekingRobot = styled.img`
-  position: fixed;
-  display: block;
-  width: 25rem;
-  right: -10rem;
-
-  @media(min-width: ${({ theme }) => theme.breakpoints[2]}){
-    display: none;
-  }
-`;
-
 const Homepage = () => (
   <>
-    <PeekingRobot src={Robot} />
+    <RobotArt />
     <Box>
       <LeftSection>
         <HeroArt />
