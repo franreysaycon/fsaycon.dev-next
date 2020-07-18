@@ -20,7 +20,8 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="canonical" href="https://fsaycon.dev/" />
       <meta name="robots" content="index, follow" />
       <meta property="og:type" content="article" />
-      <meta property="og:title" content="Homepage" />
+      <meta property="og:title" content="FSAYCON.DEV - Personal Website of Franrey Saycon" />
+      <meta property="twitter:card" content="summary" />
       <meta
         property="og:description"
         content="Hi there, I'm Franrey Saycon. I'm a software engineer specializing in architecting solutions
