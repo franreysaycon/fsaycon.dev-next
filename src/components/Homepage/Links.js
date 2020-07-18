@@ -11,7 +11,7 @@ const Container = styled.div`
     margin-right: ${({ theme }) => theme.spaces[1]};
   }
 
-  divLlast-child {
+  &:last-child {
     margin-right: 0px;
   }
 `;

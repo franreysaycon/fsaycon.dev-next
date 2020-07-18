@@ -1,6 +1,6 @@
 const theme = {
   fonts: {
-    blinker: 'Blinker',
+    blinker: 'Blinker, Arial, Helvetica, sans-serif',
   },
   fontSizes: [
     '0.563rem',
