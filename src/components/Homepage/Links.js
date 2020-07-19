@@ -5,7 +5,7 @@ import IconBox from '../atoms/IconBox';
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: calc(${({ theme }) => theme.spaces[0]} + ${({ theme }) => theme.spaces[0]} + 1.25rem); 
+  height: calc(${({ theme }) => theme.spaces[0]} * 2 + 1.25rem); 
 
   button {
     margin-right: ${({ theme }) => theme.spaces[1]};
