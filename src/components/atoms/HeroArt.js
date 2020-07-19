@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { animated, useSpring } from 'react-spring';
