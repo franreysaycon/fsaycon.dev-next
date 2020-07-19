@@ -30,9 +30,9 @@ const openMailTo = (email) => {
 
 const Links = () => (
   <Container>
-    <IconBox type="github" onClick={() => openLinkInNewTab('https://github.com/franreysaycon')} />
-    <IconBox animationDelay={100} type="linkedin" onClick={() => openLinkInNewTab('https://www.linkedin.com/in/fssaycon/')} />
-    <IconBox animationDelay={200} type="email" onClick={() => openMailTo('me@fsaycon.dev')} />
+    <IconBox animationDelay={100} type="github" onClick={() => openLinkInNewTab('https://github.com/franreysaycon')} />
+    <IconBox animationDelay={200} type="linkedin" onClick={() => openLinkInNewTab('https://www.linkedin.com/in/fssaycon/')} />
+    <IconBox animationDelay={300} type="email" onClick={() => openMailTo('me@fsaycon.dev')} />
   </Container>
 );
 
