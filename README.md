@@ -29,13 +29,13 @@ This will generate the `out` folder which contains the static generated site der
 ## Roadmap :chocolate_bar:
 
 ### Chapter 1: Website Initials :dragon_face:
-:white_check_mark: Create design of the website.
-:white_check_mark: Implement website initially in Next.
-:white_check_mark: Add Hero Image Loading strategy.
-:white_check_mark: Add Husky pre-hooks for linting.
-:black_square_button: Integrate storybook.
-:black_square_button: Integrate react testing && update prehooks.
-:black_square_button: Integrate CI for linting, testing and docs
+:white_check_mark: Create design of the website.<br/>
+:white_check_mark: Implement website initially in Next.<br/>
+:white_check_mark: Add Hero Image Loading strategy.<br/>
+:white_check_mark: Add Husky pre-hooks for linting.<br/>
+:black_square_button: Integrate storybook.<br/>
+:black_square_button: Integrate react testing && update prehooks.<br/>
+:black_square_button: Integrate CI for linting, testing and docs<br/>
 
 ### Chapter 2: Blog :sunrise:
 :black_square_button: Coming soon
