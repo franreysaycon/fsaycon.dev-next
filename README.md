@@ -44,7 +44,6 @@ This will generate the `out` folder which contains the static generated site der
  :black_square_button: Coming soon
 
 <br/>
-<br/>
 
 *"The first and greatest victory is to conquer yourself; to be conquered by yourself is of all things most shameful and vile." - Plato*
 
