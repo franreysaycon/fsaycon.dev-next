@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import { animated, useSpring } from 'react-spring';
 import HeroImage from '../../public/hero.png';
 import CubeImage from '../../public/cube.png';
+import PlaceholderImage from '../../public/placeholder.png';
 
 const CUBE_TOP_ADJUSTMENTS = 30;
 const CUBE_LEFT_ADJUSTMENTS = 23;
@@ -16,11 +17,16 @@ const cubeAnimation = keyframes`
   100% { top: ${CUBE_TOP_ADJUSTMENTS}%; opacity: 1; }
 `;
 
+const Placeholder = styled.img`
+  width: 25rem;
+  blur: 10px;
+`;
+
 const MechSuit = styled.img`
   width: 25rem;
 `;
 
-const Cube = styled(animated.img)`
+const Cube = styled.img`
   position: absolute;
   width: 13rem;
   z-index: 1;
@@ -36,10 +42,11 @@ const Cube = styled(animated.img)`
 const Container = styled(animated.div)`
   display: flex;
   position: relative;
+  width: 25rem;
 `;
 
 const HeroArt = () => {
-  const [imageSpring, setImageSpring] = useSpring(() => ({ opacity: 0 }));
+  const [imageSpring, setImageSpring] = useSpring(() => ({ blur: '10px' }));
   const [heroLoaded, setHeroLoaded] = useState(false);
   const [cubeLoaded, setCubeLoaded] = useState(false);
   const isHeroReady = heroLoaded && cubeLoaded;
@@ -62,18 +69,26 @@ const HeroArt = () => {
   useEffect(() => {
     const delayTimer = setTimeout(() => {
       if (isHeroReady) {
-        setImageSpring({ opacity: 1 });
+        setImageSpring({ blur: '0px' });
       }
-    }, 300);
+    }, 1000);
     return () => {
       clearTimeout(delayTimer);
     };
   }, [isHeroReady]);
 
   return (
-    <Container style={imageSpring}>
-      { heroLoaded && <MechSuit src={HeroImage} alt="Fantasy drawing of Franrey Saycon in a sci-fi mechanic suit with a robot helper." /> }
-      { cubeLoaded && <Cube src={CubeImage} alt="Glowing mechanical puzzle cube." /> }
+    <Container>
+      {
+        isHeroReady
+          ? (
+            <>
+              <MechSuit style={imageSpring} src={HeroImage} alt="Fantasy drawing of Franrey Saycon in a sci-fi mechanic suit with a robot helper." />
+              <Cube style={imageSpring} src={CubeImage} alt="Glowing mechanical puzzle cube." />
+            </>
+          )
+          : <Placeholder src={PlaceholderImage} alt="Placeholder image for the incoming hero art." />
+      }
     </Container>
   );
 };

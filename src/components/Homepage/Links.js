@@ -6,6 +6,7 @@ import IconBox from '../atoms/IconBox';
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  height: 2.5rem;
 
   button {
     margin-right: ${({ theme }) => theme.spaces[1]};
