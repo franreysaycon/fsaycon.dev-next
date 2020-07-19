@@ -5,12 +5,15 @@ import { animated, useSpring } from 'react-spring';
 import HeroImage from '../../public/hero.png';
 import CubeImage from '../../public/cube.png';
 
+const CUBE_TOP_ADJUSTMENTS = 30;
+const CUBE_LEFT_ADJUSTMENTS = 23;
+
 const cubeAnimation = keyframes`
-  0% { top: 38%; opacity: 1; }
+  0% { top: ${CUBE_TOP_ADJUSTMENTS}%; opacity: 1; }
   25% { opacity: 0.8; }
-  50% { top: 40%; opacity: 1; }
+  50% { top: ${CUBE_TOP_ADJUSTMENTS + 2}%; opacity: 1; }
   75% { opacity: 0.8; }
-  100% { top: 38%; opacity: 1; }
+  100% { top: ${CUBE_TOP_ADJUSTMENTS}%; opacity: 1; }
 `;
 
 const MechSuit = styled.img`
@@ -19,10 +22,10 @@ const MechSuit = styled.img`
 
 const Cube = styled(animated.img)`
   position: absolute;
-  width: 10rem;
+  width: 13rem;
   z-index: 1;
-  top: 38%;
-  left: 28%;
+  top: ${CUBE_TOP_ADJUSTMENTS}%;
+  left: ${CUBE_LEFT_ADJUSTMENTS}%;
 
   animation-name: ${cubeAnimation};
   animation-duration: 1s;
